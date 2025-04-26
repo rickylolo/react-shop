@@ -29,10 +29,9 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.cart);
     return (
       <div>
-        <NavBar></NavBar>
+        <NavBar cart={this.state.cart}></NavBar>
         <Layout>
           <Title></Title>
           <Products addToCart={this.addToCart} products={this.state.products}></Products>

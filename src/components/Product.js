@@ -17,7 +17,6 @@ const styles = {
 class Product extends Component {
   render() {
     const { product, addToCart } = this.props;
-    console.log(this.props);
 
     return (
       <div style={styles.product}>
